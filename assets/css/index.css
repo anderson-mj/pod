@@ -1,0 +1,39 @@
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* Carrossel */
+
+/* Margem da legenda + colocando por cima */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Colocando o fundo branco nas frases */
+.carousel-caption span {
+  background-color: white;
+  padding: 2px 5px;
+}
+
+/* Altura das imagens */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* P O D */
+
+/* Alinhando o texto das colunas */
+.marketing .col-lg-4 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}

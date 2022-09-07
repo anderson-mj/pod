@@ -1,0 +1,13 @@
+#disciplina {
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.much-more {
+    font-weight: 700;
+}
+
+.space-keeper {
+    visibility: hidden;
+}
