@@ -1,6 +1,6 @@
 $(function(){
-  $("#header").load("../../components/header.html"); 
-  $("#footer").load("../../components/footer.html"); 
+  $("#header").load("/pod/components/header.html"); 
+  $("#footer").load("/pod/components/footer.html"); 
 });
 
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
