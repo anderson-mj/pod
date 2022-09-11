@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand d-lg-none" href="#">POD</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -11,7 +12,8 @@
           <a class="nav-link active" aria-current="page" id="sobre" href="/pod/index.html">Sobre</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="disciplinas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="disciplinas" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Disciplinas
           </a>
           <ul class="dropdown-menu">
@@ -20,7 +22,71 @@
             <li><a class="dropdown-item" href="/pod/pages/ad.html">Avaliação de Desempenho</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sugestões</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Sugestões</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-control">
+          <div class="mb-3">
+            <label for="sender-name" class="col-form-label">Nome:</label>
+            <input type="text" class="form-control" id="sender-name">
+          </div>
+          <div class="mb-3">
+            <label for="sender-email" class="col-form-label">E-mail:</label>
+            <input type="email" class="form-control" id="sender-email">
+          </div>
+          <div class="mb-3">
+            <label for="sender-id" class="col-form-label">Matrícula:</label>
+            <input type="text" class="form-control matricula" id="sender-id">
+          </div>
+          <div class="mb-3">
+            <label for="sender-phone" class="col-form-label">Telefone:</label>
+            <input type="text" class="form-control phone" id="sender-phone">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Enviar
+          sugestão</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Obrigado!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Suas sugestões foram enviadas e serão analisadas por nós!
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" onclick="javascript:clearMessage();">Mais
+          sugestões?</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/pod/components/js/header.js"></script>
