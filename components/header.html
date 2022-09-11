@@ -39,32 +39,33 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="form-control">
+        <form id="suggestion-form" class="form-control" action="https://formspree.io/f/mqkjejqo" method="POST">
           <div class="mb-3">
             <label for="sender-name" class="col-form-label">Nome:</label>
-            <input type="text" class="form-control" id="sender-name">
+            <input type="text" name="name" class="form-control" id="sender-name" required>
           </div>
           <div class="mb-3">
             <label for="sender-email" class="col-form-label">E-mail:</label>
-            <input type="email" class="form-control" id="sender-email">
+            <input type="email" name="email" class="form-control" id="sender-email" required>
           </div>
           <div class="mb-3">
             <label for="sender-id" class="col-form-label">Matrícula:</label>
-            <input type="text" class="form-control matricula" id="sender-id">
+            <input type="text" name="matricula" class="form-control matricula" id="sender-id" required>
           </div>
           <div class="mb-3">
             <label for="sender-phone" class="col-form-label">Telefone:</label>
-            <input type="text" class="form-control phone" id="sender-phone">
+            <input type="text" name="phone" class="form-control phone" id="sender-phone">
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Mensagem:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" name="message" id="message-text" required></textarea>
+          </div>
+          <div class="modal-footer">
+            <button id="suggestion" type="submit" class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal">Enviar
+              sugestão</button>
           </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Enviar
-          sugestão</button>
       </div>
     </div>
   </div>
@@ -81,7 +82,8 @@
         Suas sugestões foram enviadas e serão analisadas por nós!
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" onclick="javascript:clearMessage();">Mais
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+          onclick="javascript:clearMessage();">Mais
           sugestões?</button>
         <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Fechar</button>
       </div>
